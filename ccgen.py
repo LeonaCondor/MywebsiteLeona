@@ -4,7 +4,7 @@ from telegram import Update
 from telegram.constants import ParseMode
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
-TOKEN_BOT = os.getenv("TOKEN_BOT")
+TOKEN = os.getenv("TOKEN")
 API_URL = "https://drlabapis.onrender.com/api/ccgenerator"
 
 def parse_input(input_text):
