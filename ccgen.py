@@ -46,7 +46,7 @@ async def ccgen_advanced(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(f"⚠️ Terjadi kesalahan: {str(e)}")
 
 if __name__ == '__main__':
-    app = ApplicationBuilder().token(TOKEN_BOT).build()
+    app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, ccgen_advanced))
     print("BOT RUNNING...")
     app.run_polling()
